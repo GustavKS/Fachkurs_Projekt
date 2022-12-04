@@ -42,7 +42,7 @@ def model_G(y, t):
   f0 = -kd1_G*(mCLNi+1)
   f1 = kp_G*mCLNi*BRi*np.sqrt(A)-kd2_G*Clni
   f2 = kgrowth_G*(kR_G/(kR_G+kAm_G+kAd_G))*mBR*BRi*np.sqrt(A)
-  f3 = kgrowth_G*(kAm_G/(kR_G+kAm_G+kAd_G))+mBA*BRi*np.sqrt(A)
+  f3 = kgrowth_G*(kAm_G/(kR_G+kAm_G+kAd_G))*mBA*BRi*np.sqrt(A)
   f4 = kgrowth_G*(kAd_G/(kR_G+kAm_G+kAd_G))*mBR*BRi*np.sqrt(A)
   return [f0,f1,f2,f3,f4]
 
