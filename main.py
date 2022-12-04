@@ -37,22 +37,11 @@ def model_G(y, t):
   BRi = y[2]
   BAmi = y[3]
   BAdi = y[4]
-<<<<<<< HEAD
   f0 = -kd1_G*(mCLNi)
   f1 = kp_G*mCLNi*BRi*np.sqrt(A0 + kx*BAm)-kd2_G*Clni
   f2 = kgrowth_G*(kR_G/(kR_G+kAm_G+kAd_G))*mBR*BRi*np.sqrt(A0 + kx*BAm)
   f3 = kgrowth_G*(kAm_G/(kR_G+kAm_G+kAd_G))+mBA*BRi*np.sqrt(A0 + kx*BAm)
   f4 = kgrowth_G*(kAd_G/(kR_G+kAm_G+kAd_G))*mBR*BRi*np.sqrt(A0 + kx*BAm)
-=======
-
-
-
-  f0 = -kd1_G*(mCLNi+1)
-  f1 = kp_G*mCLNi*BRi*np.sqrt(A)-kd2_G*Clni
-  f2 = kgrowth_G*(kR_G/(kR_G+kAm_G+kAd_G))*mBR*BRi*np.sqrt(A)
-  f3 = kgrowth_G*(kAm_G/(kR_G+kAm_G+kAd_G))*mBA*BRi*np.sqrt(A)
-  f4 = kgrowth_G*(kAd_G/(kR_G+kAm_G+kAd_G))*mBR*BRi*np.sqrt(A)
->>>>>>> bcb0165a3753e653020aa7de4b86d78321954b04
   return [f0,f1,f2,f3,f4]
 
 # Area

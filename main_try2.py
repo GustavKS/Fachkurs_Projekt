@@ -58,7 +58,7 @@ mCLN, Cln, BR, BAm, BAd = sol.y
 
 
 # Plotting
-plt.plot(sol.t, BAm, label = 'BR')
+plt.plot(sol.t, mCLN, label = 'BR')
 #plt.plot(t, BR, label = 'BAm')
 plt.legend()
 plt.show()
